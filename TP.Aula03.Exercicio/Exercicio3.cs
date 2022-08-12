@@ -40,11 +40,12 @@ namespace TP.Aula03.Exercicio
             int linhas = Convert.ToInt32(mtbLinhas.Text);
             int colunas = Convert.ToInt32(mtbColunas.Text);
             int[,] myMatrix = new int[linhas, colunas];
+            int populateMatrix = 1;
             for (int i = 0; i < myMatrix.GetLength(0); i++)
             {
                 for (int n = 0; n < myMatrix.GetLength(1); n++)
                 {
-                    myMatrix[i, n] = 0;
+                    myMatrix[i, n] = populateMatrix++;
                 }
             }
             for (int i = 0; i < myMatrix.GetLength(0); i++)
