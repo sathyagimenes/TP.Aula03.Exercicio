@@ -22,5 +22,11 @@ namespace TP.Aula03.Exercicio
             Exercicio1 tela1 = new Exercicio1();
             tela1.ShowDialog();
         }
+
+        private void btnExercicio2_Click(object sender, EventArgs e)
+        {
+            Exercicio2 tela2 = new Exercicio2();
+            tela2.ShowDialog();
+        }
     }
 }

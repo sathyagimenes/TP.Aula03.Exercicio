@@ -57,6 +57,7 @@
             this.btnExercicio2.TabIndex = 1;
             this.btnExercicio2.Text = "Exercício 2\r\n\r\nRanking de \r\npontuação";
             this.btnExercicio2.UseVisualStyleBackColor = false;
+            this.btnExercicio2.Click += new System.EventHandler(this.btnExercicio2_Click);
             // 
             // btnExercicio3
             // 
