@@ -59,5 +59,15 @@ namespace TP.Aula03.Exercicio.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgbin_vertical_bar_character_straight_line_k87QxVEzZp6qWua9hZpwnnZKd {
+            get {
+                object obj = ResourceManager.GetObject("imgbin-vertical-bar-character-straight-line-k87QxVEzZp6qWua9hZpwnnZKd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -81,6 +81,7 @@
             this.btnExercicio4.TabIndex = 3;
             this.btnExercicio4.Text = "Exercício 4\r\n\r\nJogo da \r\nvelha";
             this.btnExercicio4.UseVisualStyleBackColor = false;
+            this.btnExercicio4.Click += new System.EventHandler(this.btnExercicio4_Click);
             // 
             // label1
             // 

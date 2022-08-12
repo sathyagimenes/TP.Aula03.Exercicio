@@ -30,12 +30,10 @@
         {
             this.btnLimpar = new System.Windows.Forms.Button();
             this.lblEnunciado = new System.Windows.Forms.Label();
-            this.lblError = new System.Windows.Forms.Label();
             this.btnInsert = new System.Windows.Forms.Button();
             this.lblLinhas = new System.Windows.Forms.Label();
             this.mtbLinhas = new System.Windows.Forms.MaskedTextBox();
             this.mtbColunas = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblColunas = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.gpxMatriz = new System.Windows.Forms.GroupBox();
@@ -67,16 +65,6 @@
             this.lblEnunciado.TabIndex = 27;
             this.lblEnunciado.Text = "Peça ao usuário uma quantidade\r\nde linhas e outra de colunas, depois \r\ndeclare ta" +
     "l matriz, inicialize todos os \r\nelementos de 1 até \'linha x coluna\'.\r\n";
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(234, 183);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 19);
-            this.lblError.TabIndex = 26;
             // 
             // btnInsert
             // 
@@ -117,16 +105,6 @@
             this.mtbColunas.Size = new System.Drawing.Size(30, 26);
             this.mtbColunas.TabIndex = 2;
             this.mtbColunas.ValidatingType = typeof(int);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(234, 275);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 19);
-            this.label1.TabIndex = 31;
             // 
             // lblColunas
             // 
@@ -191,12 +169,10 @@
             this.Controls.Add(this.gpxMatriz);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.mtbColunas);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblColunas);
             this.Controls.Add(this.mtbLinhas);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.lblEnunciado);
-            this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.lblLinhas);
             this.Name = "Exercicio3";
@@ -213,12 +189,10 @@
 
         private Button btnLimpar;
         private Label lblEnunciado;
-        private Label lblError;
         private Button btnInsert;
         private Label lblLinhas;
         private MaskedTextBox mtbLinhas;
         private MaskedTextBox mtbColunas;
-        private Label label1;
         private Label lblColunas;
         private Button btnVoltar;
         private GroupBox gpxMatriz;

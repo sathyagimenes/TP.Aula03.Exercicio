@@ -34,5 +34,11 @@ namespace TP.Aula03.Exercicio
             Exercicio3 tela3 = new Exercicio3();
             tela3.ShowDialog();
         }
+
+        private void btnExercicio4_Click(object sender, EventArgs e)
+        {
+            Exercicio4 tela4 = new Exercicio4();
+            tela4.ShowDialog();
+        }
     }
 }

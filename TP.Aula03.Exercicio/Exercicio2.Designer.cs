@@ -147,6 +147,7 @@
             this.txbNumerosInsert.Name = "txbNumerosInsert";
             this.txbNumerosInsert.Size = new System.Drawing.Size(290, 23);
             this.txbNumerosInsert.TabIndex = 1;
+            this.txbNumerosInsert.TextChanged += new System.EventHandler(this.txbNumerosInsert_TextChanged);
             // 
             // gpbRanking
             // 

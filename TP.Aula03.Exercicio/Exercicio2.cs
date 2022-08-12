@@ -37,7 +37,7 @@ namespace TP.Aula03.Exercicio
                 if (!Int32.TryParse(num, out n))
                 {
                     lblError.Text = "Insert Inválido\n" +
-                        "Exemplo de insert válido: (10 2 4 5 7 1 9 8 3 6)";
+                        "Exemplo de insert válido: (10 2 4)";
                     ArrayInserted.DefaultIfEmpty();
                     return false;
                 }
@@ -108,5 +108,9 @@ namespace TP.Aula03.Exercicio
             }
         }
 
+        private void txbNumerosInsert_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
