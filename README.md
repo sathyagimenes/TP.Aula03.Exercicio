@@ -1,6 +1,7 @@
 # TP.Aula03.Exercicio
 
-Este repositório contém minha solução para os exercícios propostos na aula 03 do Módulo Técnicas de Programação
+Este repositório contém minha solução para os exercícios propostos na aula 03 do Módulo Técnicas de Programação. <br/>
+Estes exercícios foram propostos para a fixação do conteúdo de Arrays e Matrizes.
 
 ## Enunciados
 ### Exercício 1
