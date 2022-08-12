@@ -69,6 +69,7 @@
             this.btnExercicio3.TabIndex = 2;
             this.btnExercicio3.Text = "Exercício 3\r\n\r\nCrie uma \r\nmatriz";
             this.btnExercicio3.UseVisualStyleBackColor = false;
+            this.btnExercicio3.Click += new System.EventHandler(this.btnExercicio3_Click);
             // 
             // btnExercicio4
             // 

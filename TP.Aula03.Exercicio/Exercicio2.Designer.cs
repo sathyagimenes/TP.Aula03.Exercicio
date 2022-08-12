@@ -54,7 +54,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(700, 357);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(88, 81);
-            this.btnVoltar.TabIndex = 16;
+            this.btnVoltar.TabIndex = 4;
             this.btnVoltar.Text = "Voltar para menu";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -91,10 +91,10 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(613, 131);
+            this.btnLimpar.Location = new System.Drawing.Point(613, 214);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpar.TabIndex = 22;
+            this.btnLimpar.TabIndex = 3;
             this.btnLimpar.Text = "limpar";
             this.btnLimpar.UseMnemonic = false;
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -126,7 +126,7 @@
             this.btnInsert.Location = new System.Drawing.Point(613, 175);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
-            this.btnInsert.TabIndex = 19;
+            this.btnInsert.TabIndex = 2;
             this.btnInsert.Text = "insert";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);

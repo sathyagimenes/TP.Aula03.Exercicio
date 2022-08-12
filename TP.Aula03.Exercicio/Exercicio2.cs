@@ -48,6 +48,8 @@ namespace TP.Aula03.Exercicio
         private void btnInsert_Click(object sender, EventArgs e)
         {
             lblError.Text = String.Empty;
+            lblPontuacoesResult.Text = String.Empty;
+            lblRankingResult.Text = String.Empty;
             int sizeOfArray = txbNumerosInsert.Text.Split(' ').Length;
             string[] ArrayInserted = new string[sizeOfArray];
             int[] ArrayInsertedInt = new int[sizeOfArray];
