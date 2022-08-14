@@ -37,7 +37,7 @@ namespace TP.Aula03.Exercicio
                 if (!Int32.TryParse(num, out n))
                 {
                     lblError.Text = "Insert Inválido\n" +
-                        "Exemplo de insert válido: (10 2 4)";
+                        "Exemplo de insert válido: 10, 2, 4";
                     ArrayInserted.DefaultIfEmpty();
                     return false;
                 }
@@ -50,12 +50,13 @@ namespace TP.Aula03.Exercicio
             lblError.Text = String.Empty;
             lblPontuacoesResult.Text = String.Empty;
             lblRankingResult.Text = String.Empty;
-            int sizeOfArray = txbNumerosInsert.Text.Split(' ').Length;
+            txbNumerosInsert.Text = txbNumerosInsert.Text.Trim(',');
+            int sizeOfArray = txbNumerosInsert.Text.Split(',').Length;
             string[] ArrayInserted = new string[sizeOfArray];
             int[] ArrayInsertedInt = new int[sizeOfArray];
             int[] SortedArray = new int[sizeOfArray];
             int[] RankedArray = new int[sizeOfArray];
-            ArrayInserted = txbNumerosInsert.Text.Split(' ');
+            ArrayInserted = txbNumerosInsert.Text.Split(',');
             if (ValidateInput(ArrayInserted))
             {
                 for (int i = 0; i < ArrayInserted.Length; i++)
@@ -65,8 +66,9 @@ namespace TP.Aula03.Exercicio
                 for (int n = 0; n < ArrayInsertedInt.Length; n++)
                 {
                     SortedArray[n] = ArrayInsertedInt[n];
-                    lblPontuacoesResult.Text += (ArrayInsertedInt[n] + " ");
+                    lblPontuacoesResult.Text += (" " + ArrayInsertedInt[n] + ",");
                 }
+                lblPontuacoesResult.Text = lblPontuacoesResult.Text.Trim(',');
                 BubbleSort(SortedArray);
                 int j = 0;
                 foreach (int n in ArrayInsertedInt)
@@ -83,8 +85,9 @@ namespace TP.Aula03.Exercicio
                 }
                 foreach (int n in RankedArray)
                 {
-                    lblRankingResult.Text += (n + " ");
+                    lblRankingResult.Text += (" " + n + ",");
                 }
+                lblRankingResult.Text = lblRankingResult.Text.Trim(',');
             }
             ArrayInsertedInt.DefaultIfEmpty();
             ArrayInserted.DefaultIfEmpty();

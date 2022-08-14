@@ -20,9 +20,13 @@ namespace TP.Aula03.Exercicio
         private void btnInsert_Click(object sender, EventArgs e)
         {
             lblError.Text = String.Empty;
+            lblArrayOrdenada.Text = String.Empty;
+            lblArrayPares.Text = String.Empty;
+            lblArrayImpares.Text = String.Empty;
             string[] ArrayInserted = new string[10];
             int[] ArrayInsertedInt = new int[10];
-            ArrayInserted = txbNumerosInsert.Text.Split(' ');
+            txbNumerosInsert.Text = txbNumerosInsert.Text.Trim(',');
+            ArrayInserted = txbNumerosInsert.Text.Split(',');
             if (ValidateInput(ArrayInserted))
             {
                 for (int i = 0; i < ArrayInserted.Length; i++)
@@ -41,8 +45,9 @@ namespace TP.Aula03.Exercicio
             BubbleSort(array);
             foreach (int n in array)
             {
-                lblArrayOrdenada.Text += (n + " ");
+                lblArrayOrdenada.Text += (" " + n + ",");
             }
+            lblArrayOrdenada.Text = lblArrayOrdenada.Text.Trim(',');
         }
         static void BubbleSort(int[] arr)
         {
@@ -90,12 +95,14 @@ namespace TP.Aula03.Exercicio
             }
             foreach (int n in evenNumbers)
             {
-                lblArrayPares.Text += (n + " ");
+                lblArrayPares.Text += (" " + n + ",");
             }
+            lblArrayPares.Text = lblArrayPares.Text.Trim(',');
             foreach (int n in oddNumbers)
             {
-                lblArrayImpares.Text += (n + " ");
+                lblArrayImpares.Text += (" " + n + ",");
             }
+            lblArrayImpares.Text = lblArrayImpares.Text.Trim(',');
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -114,7 +121,7 @@ namespace TP.Aula03.Exercicio
                 if (!Int32.TryParse(num, out n))
                 {
                     lblError.Text = "Insert Inválido\n" +
-                        "Exemplo de insert válido: (10 2 4 5 7 1 9 8 3 6)";
+                        "Exemplo de insert válido: 10, 2, 4, 5, 7, 1, 9, 8, 3, 6";
                     ArrayInserted.DefaultIfEmpty();
                     return false;
                 }

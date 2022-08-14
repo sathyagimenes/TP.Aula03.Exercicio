@@ -65,7 +65,7 @@
             this.lblNumerosInsert.Name = "lblNumerosInsert";
             this.lblNumerosInsert.Size = new System.Drawing.Size(189, 32);
             this.lblNumerosInsert.TabIndex = 1;
-            this.lblNumerosInsert.Text = "Numeros a serem ordenados\r\n(separados por um espaço)";
+            this.lblNumerosInsert.Text = "Numeros a serem ordenados\r\n(separados por vírgula)";
             // 
             // btnInsert
             // 

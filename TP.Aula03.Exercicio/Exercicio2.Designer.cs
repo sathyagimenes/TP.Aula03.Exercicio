@@ -137,9 +137,9 @@
             this.lblNumerosInsert.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblNumerosInsert.Location = new System.Drawing.Point(103, 167);
             this.lblNumerosInsert.Name = "lblNumerosInsert";
-            this.lblNumerosInsert.Size = new System.Drawing.Size(178, 32);
+            this.lblNumerosInsert.Size = new System.Drawing.Size(153, 32);
             this.lblNumerosInsert.TabIndex = 18;
-            this.lblNumerosInsert.Text = "Insira as pontuações\r\n(separadas por um espaço)";
+            this.lblNumerosInsert.Text = "Insira as pontuações\r\n(separadas por vírgula)";
             // 
             // txbNumerosInsert
             // 
