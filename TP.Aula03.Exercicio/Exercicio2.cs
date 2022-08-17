@@ -69,7 +69,8 @@ namespace TP.Aula03.Exercicio
                     lblPontuacoesResult.Text += (" " + ArrayInsertedInt[n] + ",");
                 }
                 lblPontuacoesResult.Text = lblPontuacoesResult.Text.Trim(',');
-                BubbleSort(SortedArray);
+                Array.Sort(SortedArray);
+                Array.Reverse(SortedArray);
                 int j = 0;
                 foreach (int n in ArrayInsertedInt)
                 {
@@ -91,24 +92,6 @@ namespace TP.Aula03.Exercicio
             }
             ArrayInsertedInt.DefaultIfEmpty();
             ArrayInserted.DefaultIfEmpty();
-        }
-
-        static void BubbleSort(int[] arr)
-        {
-            int tmp = 0;
-            int num = arr.Length;
-            for (int i = 0; i < num - 1; i++)
-            { 
-                for (int j = 0; j < num - i - 1; j++) 
-                { 
-                    if (arr[j] < arr[j + 1])
-                    {
-                        tmp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = tmp;
-                    }
-                }
-            }
         }
 
         private void txbNumerosInsert_TextChanged(object sender, EventArgs e)

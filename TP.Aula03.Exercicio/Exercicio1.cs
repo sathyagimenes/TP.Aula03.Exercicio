@@ -42,29 +42,12 @@ namespace TP.Aula03.Exercicio
 
         private void SortArray(int[] array)
         {
-            BubbleSort(array);
+            Array.Sort(array);
             foreach (int n in array)
             {
                 lblArrayOrdenada.Text += (" " + n + ",");
             }
             lblArrayOrdenada.Text = lblArrayOrdenada.Text.Trim(',');
-        }
-        static void BubbleSort(int[] arr)
-        {
-            int tmp = 0;
-            int num = arr.Length;
-            for (int i = 0; i < num - 1; i++)
-            {
-                for (int j = 0; j < num - i - 1; j++)
-                {
-                    if (arr[j] > arr[j + 1])
-                    {
-                        tmp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = tmp;
-                    }
-                }
-            }
         }
         private void SortEvenOdds(int[] array)
         {
